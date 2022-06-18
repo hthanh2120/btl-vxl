@@ -1,0 +1,149 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     c_g
+022     dv_g
+023     c_p
+024     dv_p
+025     c_h
+026     dv_h
+027     thu
+028     c_d
+029     dv_d
+02A     c_t
+02B     dv_t
+02C     c_n
+02D     dv_n
+02E-034 mang_tg_rtc
+035     h1
+036     p1
+037     g1
+038     dang_bao_thuc
+039-03A @sprintf_string
+03B     LCD_SetPosition.cX
+03B     MAIN.nho_giay
+03C     chinh_bt.mode
+03C     chinh_gio.mode
+03C     rtc_init.a
+03C     MAIN.@SCRATCH1
+03D     chinh_gio.i
+03D     chinh_bt.i
+03D     rtc_init.@SCRATCH1
+03E     hienthi2.m
+03E     chinh_gio.t
+03E     chinh_bt.@SCRATCH1
+03F     @DIV88.P1
+03F-040 ReadRTC.buff
+03F-040 WriteRTC.buff
+03F     hienthi1.m
+03F     @MUL88.P1
+03F     hienthi2.@SCRATCH1
+03F     chinh_gio.@SCRATCH1
+040     @MUL88.P1
+040     @DIV88.P2
+040     hienthi1.@SCRATCH1
+040     @PSTRINGC7_604.@SCRATCH1
+041     @PSTRINGC7_604.@SCRATCH2
+041     @DIV88.@SCRATCH1
+041     ReadRTC.@SCRATCH1
+041     WriteRTC.@SCRATCH1
+042     @I2C_WRITE_1.P1
+042     @PSTRINGC7_604.@SCRATCH3
+042     ReadRTC.@SCRATCH2
+043     LCD_PutChar.cX
+043     @I2C_READ_1.P1
+043     @PSTRINGC7_604.@SCRATCH4
+044     LCD_PutCmd.cX
+044     @I2C_READ_1.@SCRATCH1
+045     LCD_SetData.cX
+045     @delay_ms1.P1
+045     @I2C_READ_1.@SCRATCH2
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const639.call
+000008  @const649.call
+00000B  @const650.call
+00000E  @const657.call
+000011  @const660.call
+000014  @const669.call
+000017  @const674.call
+000020  @const675.call
+000029  @const681.call
+000033  LCD_SetData
+00005A  @delay_ms1
+00006E  LCD_PulseEnable
+00007F  LCD_PutCmd
+00008A  LCD_Init
+0000AC  @I2C_WRITE_1
+0000F6  @I2C_READ_1
+00013B  rtc_init
+0001CF  LCD_PutChar
+0001DB  @PSTRINGC7_604
+000231  ReadRTC
+0002F5  convert_bcd
+000322  hienthi1
+0003D3  @MUL88
+0003F8  @DIV88
+00040D  chinh_gio
+0005FE  WriteRTC
+0006A0  @goto55159
+0006AA  @goto55204
+0006B4  hienthi2
+000727  chinh_bt
+000800  @cinit1
+000800  MAIN
+000812  @cinit2
+
+Project Directory:
+    C:\Users\NHT\Desktop\vxl\C\
+
+Project Files:
+    Dong ho LCD bao thuc.c                                  [16-Dec-17 07:19  CRC=507638A8]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [22-Oct-15 10:30  CRC=B168AC0E]
+    LCD 4 bit.c                                             [13-Nov-17 01:00  CRC=1023C04A]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [05-Sep-14 11:47  CRC=897CEC6C]
+
+Source signature=24FC7DD8
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=415A
+
+Units:
+    Dong ho LCD bao thuc (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Dong ho LCD bao thuc.xsym
+    Errors:      Dong ho LCD bao thuc.err
+    Ext Symbols: Dong ho LCD bao thuc.esym
+    INHX8:       Dong ho LCD bao thuc.hex
+    Symbols:     Dong ho LCD bao thuc.sym
+    List:        Dong ho LCD bao thuc.lst
+    Debug/COFF:  Dong ho LCD bao thuc.cof
+    Project:     Dong ho LCD bao thuc.ccspjt
+    Call Tree:   Dong ho LCD bao thuc.tre
+    Statistics:  Dong ho LCD bao thuc.STA
